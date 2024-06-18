@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import static streem_api.Tasks.*;
+import streem_api.Tasks.*;
 
 public class StreamProcessor {
 
@@ -41,7 +41,7 @@ public class StreamProcessor {
         return checkIdTasks;
     }
 
-    public static int countNumberTasks( String statusTask) {
+    public static int countNumberTasks(String statusTask) {
         Stream<Task> tasks = Tasks.getTaskStream();
 
         int countTasks;
