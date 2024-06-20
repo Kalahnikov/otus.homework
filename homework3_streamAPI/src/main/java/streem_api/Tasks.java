@@ -23,33 +23,33 @@ public abstract class Tasks {
         return Stream.of(
                 Task.builder()
                         .id(1)
-                        .title("Первая")
-                        .status("Открыта")
+                        .title("First")
+                        .status("Open")
                         .build(),
                 Task.builder()
                         .id(2)
-                        .title("Вторая")
-                        .status("Открыта")
+                        .title("Second")
+                        .status("Open")
                         .build(),
                 Task.builder()
                         .id(3)
-                        .title("Третья")
-                        .status("В работе")
+                        .title("Third")
+                        .status("At work")
                         .build(),
                 Task.builder()
                         .id(4)
-                        .title("Четвертая")
-                        .status("Закрыта")
+                        .title("Fourth")
+                        .status("Closed")
                         .build(),
                 Task.builder()
                         .id(5)
-                        .title("Пятая")
-                        .status("В работе")
+                        .title("Fifth")
+                        .status("At work")
                         .build(),
                 Task.builder()
                         .id(6)
-                        .title("Шестая")
-                        .status("Закрыта")
+                        .title("Sixth")
+                        .status("Closed")
                         .build()
         );
     }

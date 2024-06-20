@@ -14,13 +14,13 @@ public class StreamTest {
 
     @Test
     public void getListTasksTest() throws Exception {
-        List<Task> list = StreamProcessor.getListTasks("Закрыта");
+        List<Task> list = StreamProcessor.getListTasks("Closed");
         assertEquals(2, list.size());
     }
 
     @Test
     public void getListTasksSortedTest() throws Exception {
-        assertEquals("Открыта", StreamProcessor.getListTasksSorted().getFirst().getStatus());
+        assertEquals("Open", StreamProcessor.getListTasksSorted().getFirst().getStatus());
     }
 
     @Test
@@ -31,7 +31,7 @@ public class StreamTest {
 
     @Test
     public void countNumberTasksTest() throws Exception {
-        int quantity = StreamProcessor.countNumberTasks("Закрыта");
+        int quantity = StreamProcessor.countNumberTasks("Closed");
         assertEquals(2, quantity);
     }
 }
