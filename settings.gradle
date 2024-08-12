@@ -1,2 +1,3 @@
 rootProject.name = 'otus.homework'
+include 'homework5_patterns1'
 
